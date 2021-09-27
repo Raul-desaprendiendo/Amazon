@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Web", "Amazon\Amazon.Web.csproj", "{4FE2DEDC-A666-43E6-AB1A-10A93D718ADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Core", "Amazon.Core\Amazon.Core.csproj", "{BA668196-80A3-47FC-A57F-29269F6BF931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Infra", "Amazon.Infra\Amazon.Infra.csproj", "{77ABCB2A-3F03-4CC4-BE62-6C7BE0FE18E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Manager", "Amazon.Manager\Amazon.Manager.csproj", "{C9B4E37F-DBB4-4115-AE4A-D0F86F7ED40F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{17C8B9EC-8D95-4593-9D31-B42EB999DAD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.APIi18n", "Amazon.APIi18n\Amazon.APIi18n.csproj", "{7B8BE562-3721-4BCD-84A6-5CCA168E9A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.APIprices", "Amazon.APIprices\Amazon.APIprices.csproj", "{1BD19373-5339-4F82-A3FE-72078E68743E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Amazon.WCFstock", "Amazon.WCFstock\", "{A6F6A37D-A5EA-4A9E-A362-D9A48821BA3E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59462"
+		Debug.AspNetCompiler.PhysicalPath = "Amazon.WCFstock\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59462\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59462"
+		Release.AspNetCompiler.PhysicalPath = "Amazon.WCFstock\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59462\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59462"
+		SlnRelativePath = "Amazon.WCFstock\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FE2DEDC-A666-43E6-AB1A-10A93D718ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE2DEDC-A666-43E6-AB1A-10A93D718ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE2DEDC-A666-43E6-AB1A-10A93D718ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE2DEDC-A666-43E6-AB1A-10A93D718ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA668196-80A3-47FC-A57F-29269F6BF931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA668196-80A3-47FC-A57F-29269F6BF931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA668196-80A3-47FC-A57F-29269F6BF931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA668196-80A3-47FC-A57F-29269F6BF931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77ABCB2A-3F03-4CC4-BE62-6C7BE0FE18E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77ABCB2A-3F03-4CC4-BE62-6C7BE0FE18E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77ABCB2A-3F03-4CC4-BE62-6C7BE0FE18E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77ABCB2A-3F03-4CC4-BE62-6C7BE0FE18E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B4E37F-DBB4-4115-AE4A-D0F86F7ED40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B4E37F-DBB4-4115-AE4A-D0F86F7ED40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B4E37F-DBB4-4115-AE4A-D0F86F7ED40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B4E37F-DBB4-4115-AE4A-D0F86F7ED40F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B8BE562-3721-4BCD-84A6-5CCA168E9A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B8BE562-3721-4BCD-84A6-5CCA168E9A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B8BE562-3721-4BCD-84A6-5CCA168E9A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B8BE562-3721-4BCD-84A6-5CCA168E9A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD19373-5339-4F82-A3FE-72078E68743E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD19373-5339-4F82-A3FE-72078E68743E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD19373-5339-4F82-A3FE-72078E68743E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD19373-5339-4F82-A3FE-72078E68743E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F6A37D-A5EA-4A9E-A362-D9A48821BA3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F6A37D-A5EA-4A9E-A362-D9A48821BA3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F6A37D-A5EA-4A9E-A362-D9A48821BA3E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F6A37D-A5EA-4A9E-A362-D9A48821BA3E}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B8BE562-3721-4BCD-84A6-5CCA168E9A32} = {17C8B9EC-8D95-4593-9D31-B42EB999DAD7}
+		{1BD19373-5339-4F82-A3FE-72078E68743E} = {17C8B9EC-8D95-4593-9D31-B42EB999DAD7}
+		{A6F6A37D-A5EA-4A9E-A362-D9A48821BA3E} = {17C8B9EC-8D95-4593-9D31-B42EB999DAD7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BF7788C-0D3E-49D9-9AF5-4F0E71912A01}
+	EndGlobalSection
+EndGlobal
