@@ -13,7 +13,6 @@ public class StockRepository : IStockRepository
     public List<ProductStock> GetAllStock()
     {
         return ReadBBDD();
-
     }
 
     public ProductStock GetProductStockById(int id)

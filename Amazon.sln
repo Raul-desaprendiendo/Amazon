@@ -8,14 +8,17 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Core", "Amazon.Core\Amazon.Core.csproj", "{BA668196-80A3-47FC-A57F-29269F6BF931}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Infra", "Amazon.Infra\Amazon.Infra.csproj", "{77ABCB2A-3F03-4CC4-BE62-6C7BE0FE18E5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6F6A37D-A5EA-4A9E-A362-D9A48821BA3E} = {A6F6A37D-A5EA-4A9E-A362-D9A48821BA3E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Manager", "Amazon.Manager\Amazon.Manager.csproj", "{C9B4E37F-DBB4-4115-AE4A-D0F86F7ED40F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{17C8B9EC-8D95-4593-9D31-B42EB999DAD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.APIi18n", "Amazon.APIi18n\Amazon.APIi18n.csproj", "{7B8BE562-3721-4BCD-84A6-5CCA168E9A32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon.APIi18n", "Amazon.APIi18n\Amazon.APIi18n.csproj", "{7B8BE562-3721-4BCD-84A6-5CCA168E9A32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.APIprices", "Amazon.APIprices\Amazon.APIprices.csproj", "{1BD19373-5339-4F82-A3FE-72078E68743E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon.APIprices", "Amazon.APIprices\Amazon.APIprices.csproj", "{1BD19373-5339-4F82-A3FE-72078E68743E}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Amazon.WCFstock", "Amazon.WCFstock\", "{A6F6A37D-A5EA-4A9E-A362-D9A48821BA3E}"
 	ProjectSection(WebsiteProperties) = preProject

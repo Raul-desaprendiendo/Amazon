@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Amazon.Infra
+namespace Amazon.Core.Models
 {
-    public class Class1
+    public class ProductName
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
