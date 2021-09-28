@@ -11,33 +11,18 @@ using System.Text;
 public interface IService
 {
 
-	[OperationContract]
-	string GetData(int value);
+    [OperationContract]
+    List<ProductStock> GetAllStock();
 
-	[OperationContract]
-	CompositeType GetDataUsingDataContract(CompositeType composite);
+    [OperationContract]
+    ProductStock GetProductStockById(int id);
 
-	// TODO: Add your service operations here
+    [OperationContract]
+    bool ReduceItemStock(int id, int cuantity);
+
+    [OperationContract]
+    bool UpdateProductStock(ProductStock product);
+
 }
 
-// Use a data contract as illustrated in the sample below to add composite types to service operations.
-[DataContract]
-public class CompositeType
-{
-	bool boolValue = true;
-	string stringValue = "Hello ";
 
-	[DataMember]
-	public bool BoolValue
-	{
-		get { return boolValue; }
-		set { boolValue = value; }
-	}
-
-	[DataMember]
-	public string StringValue
-	{
-		get { return stringValue; }
-		set { stringValue = value; }
-	}
-}
