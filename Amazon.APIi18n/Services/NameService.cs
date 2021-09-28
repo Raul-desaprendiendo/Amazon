@@ -21,7 +21,7 @@ namespace Amazon.APIi18n.Services
 
         public ProductName GetProductName(int id)
         {
-            if (ProductExists(id))
+            if (!ProductExists(id))
             {
                 return null;
             }
