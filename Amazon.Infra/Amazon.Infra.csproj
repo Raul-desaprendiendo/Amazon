@@ -32,8 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Amazon.WCFstock\Bin\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\ServiceReferenceStock\Reference.cs">
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -68,34 +67,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Connected Services\ServiceReferenceStock\Amazon.Infra.ServiceReferenceStock.ProductStock.datasource">
+    <None Include="Connected Services\ServiceReference1\Amazon.Infra.ServiceReference1.ProductStock.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceReferenceStock\Service.wsdl" />
-    <None Include="Connected Services\ServiceReferenceStock\Service.xsd">
+    <None Include="Connected Services\ServiceReference1\Service.wsdl" />
+    <None Include="Connected Services\ServiceReference1\Service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReferenceStock\Service1.xsd">
+    <None Include="Connected Services\ServiceReference1\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReferenceStock\Service2.xsd">
+    <None Include="Connected Services\ServiceReference1\Service2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServiceReferenceStock\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReferenceStock\Service.disco" />
+    <None Include="Connected Services\ServiceReference1\Service.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReferenceStock\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReferenceStock\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReferenceStock\Reference.svcmap">
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

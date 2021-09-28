@@ -12,13 +12,13 @@ namespace Amazon.Infra
 {
     public class PriceService : IPriceService
     {
-        private readonly string _url = @"http://localhost:44347/price";
+        private readonly string _url = @"https://localhost:44347/price";
 
         public decimal GetProductPriceById(int id)
         {
             using (WebClient http = new WebClient())
             {
-                string json = http.DownloadString($"{_url}/id");
+                string json = http.DownloadString($"{_url}/{id}");
                 var product = JsonConvert.DeserializeObject<ProductPrice>(json);
                 return product.Price;
             }

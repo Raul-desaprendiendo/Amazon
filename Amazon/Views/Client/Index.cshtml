@@ -1,0 +1,23 @@
+﻿@model List<Amazon.Core.Models.Product>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de productos</h2>
+
+<table class="table">
+    <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Disponible</th>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.Name</td>
+            <td>@product.Price</td>
+            <td>@(product.Ammount>0?"Sí":"No")</td>
+        </tr>
+    }
+</table>
+

@@ -12,7 +12,7 @@ namespace Amazon.Infra
 {
     public class NameService : INameService
     {
-        private readonly string _url = @"http://localhost:44308/name";
+        private readonly string _url = @"https://localhost:44308/I18n";
         public string GetProductNameById(int id)
         {
             using (WebClient http = new WebClient())

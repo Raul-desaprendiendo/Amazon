@@ -1,9 +1,10 @@
 ﻿using Amazon.Core.Models;
 using Amazon.Core.Services;
-using Amazon.Infra.ServiceReferenceStock;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,10 +12,12 @@ namespace Amazon.Infra
 {
     public class StockService : IStockService
     {
-        private IService _stockService;
+        private ServiceReference1.IService _stockService;
         public StockService()
         {
-            _stockService = new ServiceClient();
+            Binding binding = new BasicHttpBinding();
+            EndpointAddress endpointAddress = new EndpointAddress("http://localhost:59462/Service.svc?wsdl");
+            _stockService = new ServiceReference1.ServiceClient(binding, endpointAddress);
         }
         public List<Core.Models.ProductStock> GetProductsStock()
         {
@@ -35,7 +38,7 @@ namespace Amazon.Infra
 
         public bool UpdateProductStock(Core.Models.ProductStock product)
         {
-            ServiceReferenceStock.ProductStock p = new ServiceReferenceStock.ProductStock { Ammount = product.Ammount, Id = product.Id };
+            ServiceReference1.ProductStock p = new ServiceReference1.ProductStock { Ammount = product.Ammount, Id = product.Id };
             return _stockService.UpdateProductStock(p);
         }
     }

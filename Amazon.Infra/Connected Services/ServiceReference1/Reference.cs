@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Amazon.Infra.ServiceReferenceStock {
+namespace Amazon.Infra.ServiceReference1 {
     using System.Runtime.Serialization;
     using System;
     
@@ -75,20 +75,20 @@ namespace Amazon.Infra.ServiceReferenceStock {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReferenceStock.IService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService")]
     public interface IService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetAllStock", ReplyAction="http://tempuri.org/IService/GetAllStockResponse")]
-        Amazon.Infra.ServiceReferenceStock.ProductStock[] GetAllStock();
+        Amazon.Infra.ServiceReference1.ProductStock[] GetAllStock();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetAllStock", ReplyAction="http://tempuri.org/IService/GetAllStockResponse")]
-        System.Threading.Tasks.Task<Amazon.Infra.ServiceReferenceStock.ProductStock[]> GetAllStockAsync();
+        System.Threading.Tasks.Task<Amazon.Infra.ServiceReference1.ProductStock[]> GetAllStockAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetProductStockById", ReplyAction="http://tempuri.org/IService/GetProductStockByIdResponse")]
-        Amazon.Infra.ServiceReferenceStock.ProductStock GetProductStockById(int id);
+        Amazon.Infra.ServiceReference1.ProductStock GetProductStockById(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetProductStockById", ReplyAction="http://tempuri.org/IService/GetProductStockByIdResponse")]
-        System.Threading.Tasks.Task<Amazon.Infra.ServiceReferenceStock.ProductStock> GetProductStockByIdAsync(int id);
+        System.Threading.Tasks.Task<Amazon.Infra.ServiceReference1.ProductStock> GetProductStockByIdAsync(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ReduceItemStock", ReplyAction="http://tempuri.org/IService/ReduceItemStockResponse")]
         bool ReduceItemStock(int id, int cuantity);
@@ -97,19 +97,19 @@ namespace Amazon.Infra.ServiceReferenceStock {
         System.Threading.Tasks.Task<bool> ReduceItemStockAsync(int id, int cuantity);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateProductStock", ReplyAction="http://tempuri.org/IService/UpdateProductStockResponse")]
-        bool UpdateProductStock(Amazon.Infra.ServiceReferenceStock.ProductStock product);
+        bool UpdateProductStock(Amazon.Infra.ServiceReference1.ProductStock product);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateProductStock", ReplyAction="http://tempuri.org/IService/UpdateProductStockResponse")]
-        System.Threading.Tasks.Task<bool> UpdateProductStockAsync(Amazon.Infra.ServiceReferenceStock.ProductStock product);
+        System.Threading.Tasks.Task<bool> UpdateProductStockAsync(Amazon.Infra.ServiceReference1.ProductStock product);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServiceChannel : Amazon.Infra.ServiceReferenceStock.IService, System.ServiceModel.IClientChannel {
+    public interface IServiceChannel : Amazon.Infra.ServiceReference1.IService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServiceClient : System.ServiceModel.ClientBase<Amazon.Infra.ServiceReferenceStock.IService>, Amazon.Infra.ServiceReferenceStock.IService {
+    public partial class ServiceClient : System.ServiceModel.ClientBase<Amazon.Infra.ServiceReference1.IService>, Amazon.Infra.ServiceReference1.IService {
         
         public ServiceClient() {
         }
@@ -130,19 +130,19 @@ namespace Amazon.Infra.ServiceReferenceStock {
                 base(binding, remoteAddress) {
         }
         
-        public Amazon.Infra.ServiceReferenceStock.ProductStock[] GetAllStock() {
+        public Amazon.Infra.ServiceReference1.ProductStock[] GetAllStock() {
             return base.Channel.GetAllStock();
         }
         
-        public System.Threading.Tasks.Task<Amazon.Infra.ServiceReferenceStock.ProductStock[]> GetAllStockAsync() {
+        public System.Threading.Tasks.Task<Amazon.Infra.ServiceReference1.ProductStock[]> GetAllStockAsync() {
             return base.Channel.GetAllStockAsync();
         }
         
-        public Amazon.Infra.ServiceReferenceStock.ProductStock GetProductStockById(int id) {
+        public Amazon.Infra.ServiceReference1.ProductStock GetProductStockById(int id) {
             return base.Channel.GetProductStockById(id);
         }
         
-        public System.Threading.Tasks.Task<Amazon.Infra.ServiceReferenceStock.ProductStock> GetProductStockByIdAsync(int id) {
+        public System.Threading.Tasks.Task<Amazon.Infra.ServiceReference1.ProductStock> GetProductStockByIdAsync(int id) {
             return base.Channel.GetProductStockByIdAsync(id);
         }
         
@@ -154,11 +154,11 @@ namespace Amazon.Infra.ServiceReferenceStock {
             return base.Channel.ReduceItemStockAsync(id, cuantity);
         }
         
-        public bool UpdateProductStock(Amazon.Infra.ServiceReferenceStock.ProductStock product) {
+        public bool UpdateProductStock(Amazon.Infra.ServiceReference1.ProductStock product) {
             return base.Channel.UpdateProductStock(product);
         }
         
-        public System.Threading.Tasks.Task<bool> UpdateProductStockAsync(Amazon.Infra.ServiceReferenceStock.ProductStock product) {
+        public System.Threading.Tasks.Task<bool> UpdateProductStockAsync(Amazon.Infra.ServiceReference1.ProductStock product) {
             return base.Channel.UpdateProductStockAsync(product);
         }
     }
